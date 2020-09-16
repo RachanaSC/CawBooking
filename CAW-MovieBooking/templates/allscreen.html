@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+</header>
+<section>
+<div class="container">
+	<h1 class="text-center text-capitalize pt-5">Movies Allscreens</h1>
+	<h4 class="text-center"> <a href="/city/Pune">Pune</a> <a href="/city/Bangalore">Bangalore</a> <a href="/city/Hydrabaad">Hydrabaad</a></h4>
+	<hr class="w-25 mx-auto pt-5">
+	<div class="row text-center mb-5">
+	{% for screen in screens %}
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card" >
+				  <div class="card-body">
+					<h4 class="card-title">{{ movies[screen._id]['name'] }}</h4>
+					  <p class="card-text">{{ movies[screen._id]['description'] }}</p>
+					  <p class="small">{{ screen.city }} [ {{ screen.start_time }} {{ screen.end_time }} ]</p>
+					  <p class="small">Rs.{{ screen.price }}  ({{ screen.booked_seats }} booked!)</p>
+					<a href="/booking/{{screen._id}}" class="btn btn-primary">Book Now</a>
+				  </div>
+				</div>
+			</div>
+	{% endfor %}
+    </div>
+</div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+</header>
+{% block content %}
+<div class="container">
+  <form id="booking-form"  action="/booking/{{screen._id}}" method="post" class="login-page-form">
+  <div class="form-group">
+    <h3>Book Your Movie Now!</h3>
+  </div><hr>
+  <!--<h6>{{ movie_id }}</h6>-->
+    <table style="width:100%">
+      <tr>
+        <th>Movie Name :</th>
+        <th><h4>{{ movie.name }}</h4></th>
+      </tr>
+       <tr>
+          <th>About Movie :</th>
+         <th>{{ movie.description }}</th>
+      </tr>
+      <tr>
+        <th>Screen:</th>
+        <th>{{ screen._id }} [ {{ screen.start_time }} {{ screen.end_time }} ]</th>
+      </tr>
+      <tr>
+        <th>Price :</th>
+        <th>{{ screen.price }}</th>
+      </tr>
+    </table>
+    <div class="form-group">
+      <label >Enter no of seats  <p class="seats">( only {{ava_seats}} available!)</p></label>
+      <input type="number" class="form-control" id="seats" name="seats" min="1" max="{{ava_seats}}">
+    </div>
+    {% if ava_seats<1 %}
+      <button type="submit" id="submit" class="btn btn-success" disabled>Book Movie</button>
+      <label class="seats">Sorry this screen is all booked!</label>
+    {% else %}
+      <button type="submit" id="submit" class="btn btn-success">Book Movie</button>
+    {% endif %}
+
+
+
+</form>
+</div>
+{% endblock %}

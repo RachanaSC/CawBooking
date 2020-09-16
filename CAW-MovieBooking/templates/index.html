@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=" {{url_for('static', filename='images/homeslider.jpg')}}" alt="sale" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Get 50% off for a group booking</h3>
+        <p>We had such a great time!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='images/homeslider2.jpg')}}" alt="avoid lines" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Avoid Lines</h3>
+        <p>Get the tickets before show goes Housefull!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='images/homeslider.jpg')}}" alt="too late" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Book it before its too late</h3>
+        <p>Picture Abhi baki hei, Mere Dost!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</header>
+
+<!-- Movies part -->
+<section>
+<div class="container">
+	<h1 class="text_effects text-center text-capitalize pt-5">Movies</h1>
+	<hr class="w-25 mx-auto pt-5">
+	<div class="row text-center mb-5">
+	{% for movie in movies %}
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card" >
+				  <!--<img class="card-img-top" src="images/homeslider.jpg" alt="Card image">-->
+				  <div class="card-body">
+					<h4 class="card-title">{{ movie.name  }}</h4>
+					<p class="card-text" >{{ movie.description }}</p>
+					<a href="/allscreen" class="btn btn-primary">Book Now</a>
+				  </div>
+				</div>
+			</div>
+	{% endfor %}
+    </div>
+</div>
+
+</section>
+
+<!-- service end -->
+
+<!-- contact demo -->
+
+<section class="bg-primary join_gradient">
+	
+	<article class="py-5 text-center text-white">
+		<div>
+			<h3 class="display-4 ">+91 123465897</h3>
+			<p>If you want best serive Call us now.</p>
+			<div class="batman_contact">
+				<img src="{{url_for('static', filename='images/batmanrun.gif')}}" alt="batman">
+			</div>
+			
+		</div>
+	</article>
+</section>
+
+{% endblock %}

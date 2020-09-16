@@ -1,0 +1,49 @@
+CAW Movie Database
+/******USER *****/
+
+collection name : user
+{
+   '_id':'',
+   'name': '',   
+   'email':'',
+   'password':''
+}
+
+
+/******Movies *****/
+
+collection name : movie
+{
+   '_id':'',
+   'name':'',
+   'description':''  
+
+}
+
+/******Screen *****/
+
+collection name : screen
+{
+   '_id':'',      
+   'movie_id':'',
+   'total_seats':'',
+   'booked_seats':'',
+   'start_time':'',
+   'end_time':'',
+   'price':'',
+   'isfull':'',
+   'city':''
+}
+
+/*****Bookings****/
+collection name : booking
+{
+  '_id':'',
+   'user_id': '',
+   'screen_id':'',
+   'movie_id':'',
+   'moviename':'',
+   'no_of_seats':'',
+   'total_price':''
+}
+

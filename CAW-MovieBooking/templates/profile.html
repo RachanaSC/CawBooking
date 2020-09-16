@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+</header>
+{% block content %}
+<div class="container">
+
+  <h3 class="text-center">Welcome to your profile !</h3>
+	<h1 class="text-center text-capitalize pt-5 font_about"> {{ name }} <img src="{{url_for('static', filename='images/reel.png')}}" class="love_class"></h1>
+
+  <hr>
+	<div class="container">
+		<h2 class="center">{{ email }}'s Bookings</h2>
+		<button class="btn btn-default"><a href="/allscreen">Book Movies</a></button>
+		<button class="btn btn-default"><a href="/logout">logout</a></button>
+		<hr>
+		{% for booking in bookings %}
+			<p>Booking Details</p>
+			  <h6>Booking ID:  {{booking._id}}</h6>
+		      <h6>Movie Name:  {{ booking.moviename }}</h6>
+		      <h6>screen :  {{booking.screen_id}}</h6>
+			  <h6>Number of Seats : {{ booking.no_of_seats}}</h6>
+			  <h6>Price :  {{booking.total_price}}</h6>
+		   <hr>
+		{% endfor %}
+
+    </div>
+
+
+</div>
+{% endblock %}

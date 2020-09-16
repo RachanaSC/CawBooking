@@ -1,0 +1,96 @@
+movies
+
+db.movie.insert({
+   '_id':'a15ddb101a1947798d649e5b9d4edb9f',
+   'name':'Padosan',
+   'description':'A simple man from a village falls in love with his new neighbor. He enlists the help of his musical-theater friends to woo the lovely girl'
+  })
+
+db.movie.insert({
+   '_id':'a15ddd101a1947798d649e5b9d4edb9f',
+   'name':'Mother India',
+   'description':'In this melodrama, a poverty-stricken woman raises her sons through many trials and tribulations.She always sticks to her own moral code.'
+ 
+
+})
+
+db.movie.insert({
+   '_id':'h15ddd101a1947798d649e5b9d4edb9f',
+   'name':'Gol Maal',
+   'description':'A man's simple lie to secure his job escalates into more complex lies when his orthodox boss gets suspicious.'
+     
+
+})
+
+db.movie.insert({
+   '_id':'p15ddd101a1947798d649e5b9d4edb9e',
+   'name':'Deewaar',
+   'description':'Vijay struggles as a dockworker and eventually becomes a leading figure of the underworld, his brother Ravi is an educated, upright policeman'
+
+
+})
+
+db.movie.insert({
+   '_id':'r15ddd101a1947798d649e5b9d4edbrt',
+   'name':'Awaara',
+   'description':'A poor young man named Raj joins a criminal gang to feed his mother. But when he falls in love with Rita,decides to reform.'
+    
+
+})
+
+db.movie.insert({
+   '_id':'a15ddd101a1947798d649e5b9d4edyu3',
+   'name':'Hello Bombay!',
+   'description':'The boy Krishna is abandoned by his mother at the Apollo Circus and she tells him that he can only return home'
+     
+
+})
+
+db.movie.insert({
+   '_id':'a15ddd101a19477t67649e5b9d4edb9f',
+   'name':'Guide',
+   'description':'When mistaken to be a sage by some villagers, an ex-tour guide reflects on his past and lost love to search for spiritual wisdom.'
+   
+
+})
+
+db.movie.insert({
+   '_id':'k55ddd101a1947798d649e5b9d4edb9f',
+   'name':'Jaane Bhi Do Yaaro',
+   'description':'Two friends, attempting to start-up their own photo studio, come across shady dealings, corruption and murder'
+ 
+
+})
+
+db.movie.insert({
+   '_id':'a15ddt671a1947798d649e5b9d4edb9f',
+   'name':'Pyaasa',
+   'description':'A talented but indigent poet Vijay struggles for love and recognition in this selfish world.'
+     
+
+})
+
+db.movie.insert({
+   '_id':'a15ddd101a1u77798d649e5b9d4edb9f',
+   'name':'Shatranj Ke Khilari',
+   'description':'Wazed Ali Shah was the ruler of one of the last independent kingdoms of India. The British, intent on controlling this rich country'
+   
+     
+
+})
+
+db.movie.insert({
+   '_id':'y31ddd101a1947798d649e5b9d4edb54',
+   'name':'Anand',
+   'description':'The story of a terminally ill man who wishes to live life to the fullest before the inevitable occurs, as told by his best friend.'
+   
+
+})
+
+db.movie.insert({
+   '_id':'c15ddd101a1947798d649e5b9d4edb49',
+   'name':'Mughal-E-Azam',
+   'description':'A 16th century prince falls in love with a court dancer and battles with his emperor father.'
+   
+
+})
